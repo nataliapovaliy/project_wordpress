@@ -159,3 +159,66 @@ body {
   letter-spacing: 0.02em;
   color: #b7b7b7;
 }
+/* TEAM */
+.team {
+  height: 745px;
+}
+.block__head {
+  text-align: center;
+}
+.block__title {
+  font-family: "HelveticaNeueLTProLt", sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #1d1e1f;
+  margin: 0;
+}
+.block__text {
+  font-family: "Merriweather-LightItalic", sans-serif;
+  font-size: 16px;
+  /* line-height: 26px; */
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  color: #898888;
+  margin: 0;
+}
+.team__inner {
+  display: flex;
+  justify-content: space-around;
+}
+.team__item {
+  text-align: center;
+}
+.team__item-img {
+}
+.team__item-title {
+  font-family: "HelveticaNeueLTProLt", sans-serif;
+  font-size: 24px;
+  /* line-height: 26px; */
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #464646;
+  margin: 0;
+}
+.team__item-text {
+  font-family: "HelveticaNeueLTProLt", sans-serif;
+  font-size: 13px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #b3b3b3;
+  margin: 0;
+}
+.team__social {
+  list-style: none;
+  display: flex;
+  color: #e4e4e4;
+}
+.social__item {
+}
+.social__link {
+}
+.social__icon {
+}
