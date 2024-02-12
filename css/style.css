@@ -122,8 +122,8 @@ body {
   height: 1129px;
   padding-top: 128px;
   padding-bottom: 271px;
-  background: url(../img/buildings__black.png) center bottom repeat-x,
-    url(../img/buildings__white.png) center bottom repeat-x, #1d1d1d;
+  background: url(../img/buildings__black.png) center 101% repeat-x,
+    url(../img/buildings__white.png) center 101% repeat-x, #1d1d1d;
   /* background-size: contain, contain; */
 }
 .about__inner {
@@ -159,7 +159,7 @@ body {
   letter-spacing: 0.02em;
   color: #b7b7b7;
 }
-/* TEAM */
+/* ---------------------------------TEAM */
 .team {
   height: 745px;
 }
@@ -173,6 +173,8 @@ body {
   letter-spacing: 0.02em;
   color: #1d1e1f;
   margin: 0;
+  padding-top: 138px;
+  margin-bottom: 13px;
 }
 .block__text {
   font-family: "Merriweather-LightItalic", sans-serif;
@@ -187,11 +189,13 @@ body {
 .team__inner {
   display: flex;
   justify-content: space-around;
+  padding-top: 127px;
 }
 .team__item {
   text-align: center;
 }
 .team__item-img {
+  margin-bottom: 29px;
 }
 .team__item-title {
   font-family: "HelveticaNeueLTProLt", sans-serif;
@@ -201,6 +205,7 @@ body {
   letter-spacing: 0.02em;
   color: #464646;
   margin: 0;
+  margin-bottom: 7px;
 }
 .team__item-text {
   font-family: "HelveticaNeueLTProLt", sans-serif;
@@ -210,15 +215,218 @@ body {
   letter-spacing: 0.02em;
   color: #b3b3b3;
   margin: 0;
+  margin-bottom: 21px;
 }
 .team__social {
+  padding: 0;
   list-style: none;
   display: flex;
-  color: #e4e4e4;
+  gap: 16px;
+  justify-content: center;
+  /* color: #e4e4e4; */
 }
 .social__item {
+  width: 21px;
+  height: 21px;
 }
 .social__link {
+  width: 100%;
+  height: 100%;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  color: #e4e4e4;
 }
 .social__icon {
+  transition-property: fill;
+  /* transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+  fill: currentColor;
+}
+.social__link:hover,
+.social__link:focus {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: #464646;
+}
+
+/* ---------------------------------PROVIDE */
+.provide {
+  background-color: #181818;
+  padding-bottom: 155px;
+}
+.block__head {
+}
+.inverse {
+}
+.inverse .block__title {
+  padding-top: 176px;
+  color: #ffffff;
+}
+.inverse .block__text {
+  color: #777777;
+}
+.provide__inner {
+  padding-top: 138px;
+  display: flex;
+  /* gap: 81px; */
+  justify-content: space-between;
+}
+.provide__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  max-width: 335px;
+}
+.icon-chart-line {
+}
+.provide__item-box {
+  width: 172px;
+  height: 172px;
+  border: 6px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 43px;
+}
+.provide__icon {
+  transition-property: fill;
+  fill: currentColor;
+}
+.provide__item-title {
+  font-family: "HelveticaNeueLTProLt", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 31px;
+}
+.provide__item-text {
+  font-family: "HelveticaNeueLTProLt", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #383838;
+  margin: 0;
+}
+/* ---------------------------------CONTACT */
+/* ---------------------------------PROVIDE */
+.contact .block__head .block__title {
+  padding-top: 95px;
+}
+.block__title {
+}
+.block__text {
+}
+.contact__inner {
+}
+.contact__icon-box {
+  display: flex;
+  justify-content: space-between;
+  max-width: 570px;
+  margin: 0 auto;
+  padding-top: 64px;
+}
+.contact__item {
+  text-align: center;
+  width: 130px;
+}
+.contact__item-box {
+}
+.provide__icon {
+}
+.contact__text {
+  margin-bottom: 12px;
+}
+.contact__text a {
+  font-family: "HelveticaNeueLTProLt", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #898888;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.contact__text a:hover {
+  color: #4a4a4a;
+  text-decoration: underline;
+}
+.contact__form {
+  padding-top: 153px;
+  display: flex;
+  flex-direction: column;
+  max-width: 770px;
+  margin: 0 auto;
+}
+.contact__form input {
+  height: 52px;
+  padding: 20px;
+  text-align: center;
+  font-family: "HelveticaNeueLTProLt", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #898888;
+  border: 1px solid #999999;
+}
+.contact__name {
+  margin-bottom: 20px;
+}
+.contact__email {
+  margin-bottom: 20px;
+}
+.contact__number {
+  margin-bottom: 18px;
+}
+/* Добавлен код для input number, 
+чтобы не отображались стрелочки сбоку.
+.....НО! пишут, что можно было задавать type="tel", а не number. 
+Но тогда можно будет вводить и буквы тоже */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.contact__textarea {
+  padding: 22px;
+  margin-bottom: 21px;
+  height: 195px;
+  resize: none;
+  font-family: "HelveticaNeueLTProLt", sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #898888;
+  border: 1px solid #999999;
+}
+.contact__form .contact__button {
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+  border: none;
+  background-color: #161616;
+  font-family: "HelveticaNeueLTProMd", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #fefefe;
+}
+.footer {
+  padding-top: 154px;
+  padding-bottom: 29px;
+}
+.footer__text {
+  text-align: center;
+  font-family: "HelveticaNeueLTProLt", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #3b3b3b;
 }
