@@ -313,7 +313,6 @@ body {
   margin: 0;
 }
 /* ---------------------------------CONTACT */
-/* ---------------------------------PROVIDE */
 .contact .block__head .block__title {
   padding-top: 95px;
 }
@@ -429,4 +428,45 @@ input[type="number"] {
   font-weight: 400;
   letter-spacing: 0.02em;
   color: #3b3b3b;
+}
+/* ---------------------------------MEDIA */
+@media screen and (max-width: 769px) {
+  .container {
+    width: 768px;
+  }
+  .about {
+    height: auto;
+    padding-bottom: 200px;
+  }
+  .about__inner {
+    grid-template-columns: max-content;
+    grid-gap: 30px;
+  }
+  .provide {
+    padding-bottom: 100px;
+  }
+  .team .block__title,
+  .provide .block__title {
+    padding-top: 100px;
+  }
+  .provide__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .provide__item {
+    max-width: 300px;
+    margin: 0 30px 40px;
+  }
+  .contact__form {
+    padding-top: 100px;
+  }
+  .footer {
+    padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .container {
+    width: 376px;
+  }
 }
